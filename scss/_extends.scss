@@ -1,0 +1,26 @@
+@use "variables";
+
+%colums-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+}
+%button {
+  background-color: $accent-color;
+  border: 1px solid $accent-color;
+  color: $main-bg-color;
+  font: $button-font;
+  border-radius: 4px;
+  padding: 8px 10px;
+  cursor: url('../images/cursor.svg'), auto;
+}
+%buttontwo {
+  background-color: $accent-color;
+  border: 1px solid $accent-color;
+  color: $main-bg-color;
+  font: $button-font;
+  border-radius: 6px;
+  padding: 8px 10px;
+  cursor: url('../images/cursor.svg'), auto;
+}
+

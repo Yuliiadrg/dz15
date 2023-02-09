@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Dz15</title>
+</head>
+
+<body>
+    <!--cosmetics-->
+    <div class="background">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="container">
+            <section class="main-section">
+                <h2 class="main-section__title">Create an Account</h2>
+                <form class="main-section__form">
+                    <div class="main-section-form-group main-section-form-group__2col">
+                        <div class="form-group-input">
+                            <label for="firstname">First Name</label>
+                            <input id="firstname" type="text" required>
+                        </div>
+                        <div class="form-group-input">
+                            <label for="lastname">Last Name</label>
+                            <input id="lastname" type="text">
+                        </div>
+                    </div>
+                    <div class="main-section-form-group">
+                        <div class="form-group-input">
+                            <label for="email">E-mail</label>
+                            <input id="email" type="email">
+                            <span class="main-section-form-group__suptext">We'll never share your email with anyone
+                                else.</span>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-radio-btns">
+                        <div class="form-group-radio">
+                            <input type="radio" id="male" name="sex" value="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="form-group-radio">
+                            <input class="form-input" type="radio" id="female" name="sex" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="main-section-form-group main-section-form-group__2col">
+                        <div class="form-group-select">
+                            <label for="country">Country</label>
+                            <select class="form-input form-input-select" name="country" id="country">
+                                <option>Select</option>
+                                <option value="ukraine">Ukraine</option>
+                                <option value="france">France</option>
+                                <option value="poland">Poland</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Slowakia">Slowakia</option>
+                                <option value="ukraine">Ukraine</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Turkey">Turkey	</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="Switzerland">Switzerland	</option>
+                                <option value="Sweden">Sweden</option>
+                            </select>
+                        </div>
+                        <div class="form-group-input">
+                            <label for="city">City</label>
+                            <input id="city" type="text">
+                        </div>
+                    </div>
+                    <button class="main-section__button" type="submit">Sign up</button>
+                </form>
+                <p class="main-section__privacy">By clicking the 'Sign Up' button, you confirm that you accept our <a
+                        href="/">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+                <hr class="main-section__hr">
+                <p class="main-section__privacy"> Have an account? <a href="#">Log In</a></p>
+            </section>
+            <!--SECOND-->
+            <section class="section-profile">
+                <h2 class="section-profile__title">Profile</h2>
+
+                <form class="section-profile__form">
+                    <div class="images-section">
+                        <div class="images-section-place">
+                            <div class="images-section-position">
+                                <div class="images-section-position__absolute">
+                                    <img id="image">
+                                </div>
+                                <img class="images-section-position__relative" src="./images/input-icon-8.jpg"
+                                    alt="photo">
+                            </div>
+                            <div class="images-section-block">
+                                <div class="images-section-choose-picture">
+                                    <div class="images-section-choose-photo">
+                                        <input type="file" accept="image/*" id="image-upload" required>
+                                        <svg width="18" height="20">
+                                            <use href="./images/sprite.svg#camera"></use>
+                                        </svg>
+                                    </div>
+                                    <button class="trash-button" id="cancel-btn">
+                                        <svg width="16" height="16">
+                                            <use href="./images/sprite.svg#trasher"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <p class="under-text text-2">Up to 1 MB (300x300 px)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="section-profile__form">
+                        <div class="section-profile-form-group section-profile-form-group__2col">
+
+                            <div class="form-group-input">
+                                <label for="firstname">Name</label>
+                                <input id="firstname" type="text" required>
+                            </div>
+
+                            <div class="section-profile-form-group">
+                                <div class="form-group-input">
+                                    <label for="email">E-mail</label>
+                                    <input id="email" type="email">
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="section-profile-form-group section-profile-form-group__2col">
+                            <div class="form-group-select">
+
+                                <label for="country">Country</label>
+                                <select class="form-input form-input-select" name="country" id="country">
+                                    <option>Select</option>
+                                    <option value="ukraine">Ukraine</option>
+                                    <option value="france">France</option>
+                                    <option value="poland">Poland</option>
+                                    <option value="Georgia">Georgia</option>
+                                    <option value="Slowakia">Slowakia</option>
+                                    <option value="ukraine">Ukraine</option>
+                                    <option value="Thailand">Thailand</option>
+                                    <option value="Turkey">Turkey	</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="Switzerland">Switzerland	</option>
+                                    <option value="Sweden">Sweden</option>
+                                </select>
+                            </div>
+
+
+                            <div class="form-group-input">
+                                <label for="city">City</label>
+                                <input id="city" type="text">
+                            </div>
+                        </div>
+
+
+                        <div class="section-profile-form-group section-profile-form-group__2col">
+                            <div class="form-group-input">
+                                <label for="code">Zip Code</label>
+                                <input id="code" type="text" required>
+                            </div>
+                            <div class="form-group-input">
+                                <label for="phone">Phone Number</label>
+                                <input id="phone" type="tel">
+                            </div>
+                        </div>
+                        <button class="section-profile__button" type="submit">Update</button>
+                    </form>
+                </form>
+            </section>
+        </div>
+    </div>
+    <!-- <script>
+   const fileSelector = document.getElementById('city');
+   fileSelector.addEventListener('change', (event) => {
+    const fileList = event.target.files;
+    console.log(fileList);
+});
+   </script> -->
+</body>
+
+</html>
